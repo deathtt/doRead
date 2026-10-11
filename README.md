@@ -1,6 +1,6 @@
 # doRead ✦
 
-**Tasks · File editor · Portfolio** — one beautiful local-first page.
+**Tasks · File editor · Code runner · Portfolio** — one beautiful local-first page.
 
 Live demo (after GitHub Pages is enabled):  
 **https://deathtt.github.io/doRead/**
@@ -16,10 +16,15 @@ Live demo (after GitHub Pages is enabled):
 - Max 15 items, export as text, reset anytime
 - Fully offline (localStorage)
 
-### 📄 Files
+### 📄 Files + Code Runner
 Open, edit and re-save almost anything:
-- **Read**: PDF, Word (.docx), Excel/CSV, Markdown, HTML, JSON, code, plain text…
+- **Read**: PDF, Word (.docx), Excel/CSV, Markdown, HTML, JSON, Python, JS, code, plain text…
 - **Edit** with live preview (Markdown & HTML)
+- **Paste** button — insert clipboard text in one click
+- **▶ Run** — execute **Python** (Pyodide, in-browser) or **JavaScript**
+  - First Python run loads the runtime (~10–20 s)
+  - Shortcut: **Ctrl/Cmd + Enter**
+  - Output panel shows print / console / errors
 - **Save as**: MD, TXT, HTML, JSON, CSV, SVG, PDF, Word, Excel, EPUB, ZIP, PNG, JPG, WebP
 
 Drag & drop or pick a file. Everything stays in your browser.
@@ -49,7 +54,7 @@ For the live version on GitHub Pages:
 ## Technical notes
 
 - Pure static HTML + CSS + vanilla JS
-- Libraries loaded from CDN (pdf.js, mammoth, SheetJS, jsPDF, JSZip, marked, DOMPurify)
+- Libraries loaded from CDN (pdf.js, mammoth, SheetJS, jsPDF, JSZip, marked, DOMPurify, **Pyodide** on demand)
 - All data stays on-device (localStorage)
 - Download works with the normal browser download dialog
 - Optimized text extraction for PDF / Word / spreadsheets
